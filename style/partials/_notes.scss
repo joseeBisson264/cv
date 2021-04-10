@@ -1,0 +1,12 @@
+#note {
+   background-color: yellowgreen;
+   padding: 20px;
+   position: fixed;
+   top: 0;
+   right: 0;
+   width: 300px;
+   z-index: 1000;
+}
+#note p:before {
+   content: "- ";
+}

@@ -1,0 +1,19 @@
+#prix {
+	background-color: $colorBackgroundEmphase;
+	* {
+		color: $colorBackgroundPale;
+	}
+	h2 {
+		border: none;
+	}
+	h3 {
+		margin-top: 50px;
+		font-size: 1.3em;
+		color: $colorEmphase;
+	}
+	.categorie {
+		display: block;
+		font-size: 0.7em;
+		color: $colorEmphase;
+	}
+}

@@ -1,0 +1,27 @@
+#presentation {
+	background-color: $colorBackgroundEmphase2;
+	position: relative;
+	&::after {
+		content: " ";
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 100vw 80px 0;
+		border-color: transparent $colorBackgroundEmphase2 transparent transparent;
+		position: absolute;
+		transform: scaleX(-1);
+		bottom: -80px;
+		left: 0;
+		z-index: 10;
+	}
+	* {
+		color: $colorBackgroundPale;
+	}
+	h2 {
+		border: none;
+		&::after,
+		&::before {
+			content: " - ";
+		}
+	}
+}

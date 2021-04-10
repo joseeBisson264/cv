@@ -1,0 +1,36 @@
+header {
+	height: 100vh;
+	width: 100vw;
+	background-color: $colorBackgroundEmphase;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	&::after {
+		content: " ";
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 100vw 80px 0;
+		border-color: transparent $colorBackgroundEmphase transparent transparent;
+		position: absolute;
+		bottom: -80px;
+		left: 0;
+		z-index: 10;
+	}
+	* {
+		font-family: "Quicksand", sans-serif;
+		font-size: 1.5rem;
+		color: $colorBackgroundPale;
+	}
+	h1 {
+		color: $colorEmphase;
+		text-transform: uppercase;
+		font-size: 4rem;
+	}
+	#welcomeDesc::after,
+	#welcomeDesc:before {
+		content: " - ";
+	}
+}

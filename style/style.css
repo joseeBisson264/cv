@@ -1,0 +1,225 @@
+/*$colorBackgroundEmphase: #011a24;
+$colorBackgroundEmphase2: #022b3a;
+$colorEmphase: #368f8b;
+$colorBackgroundPale: #fcecdd;
+$colorTexte: #333;
+*/
+* {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #fce2dd;
+}
+
+body > section {
+  padding: calc(5vh + 80px) 15vw 5vh 15vw;
+}
+
+p,
+li {
+  margin: 5px 0;
+}
+
+ul {
+  margin: 10px 40px;
+  list-style-type: square;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin: 2rem 0 1rem 0;
+}
+
+h2::after, h2::before {
+  content: " - ";
+}
+
+h3 {
+  color: #333;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin: 30px 0 15px 0;
+}
+
+.date {
+  color: #a53860;
+}
+
+.date::after {
+  content: " : ";
+}
+
+header {
+  height: 100vh;
+  width: 100vw;
+  background-color: #270512;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+header::after {
+  content: " ";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 100vw 80px 0;
+  border-color: transparent #270512 transparent transparent;
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  z-index: 10;
+}
+
+header * {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5rem;
+  color: #fce2dd;
+}
+
+header h1 {
+  color: #a53860;
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+
+header #welcomeDesc::after,
+header #welcomeDesc:before {
+  content: " - ";
+}
+
+#note {
+  background-color: yellowgreen;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  z-index: 1000;
+}
+
+#note p:before {
+  content: "- ";
+}
+
+#presentation {
+  background-color: #450920;
+  position: relative;
+}
+
+#presentation::after {
+  content: " ";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 100vw 80px 0;
+  border-color: transparent #450920 transparent transparent;
+  position: absolute;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  bottom: -80px;
+  left: 0;
+  z-index: 10;
+}
+
+#presentation * {
+  color: #fce2dd;
+}
+
+#presentation h2 {
+  border: none;
+}
+
+#presentation h2::after, #presentation h2::before {
+  content: " - ";
+}
+
+#cv {
+  position: relative;
+  /* -------------------aside----------------- */
+}
+
+#cv::after {
+  content: " ";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 100vw 80px 0;
+  border-color: transparent #fce2dd transparent transparent;
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  z-index: 10;
+}
+
+#cv .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#cv .flex > * {
+  padding: 30px;
+}
+
+#cv aside {
+  min-width: 300px;
+}
+
+#cv aside h2 {
+  font-size: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #333;
+}
+
+#cv aside h2::before, #cv aside h2::after {
+  content: "";
+}
+
+#cv aside ul {
+  margin-left: 20px;
+}
+
+#prix {
+  background-color: #270512;
+}
+
+#prix * {
+  color: #fce2dd;
+}
+
+#prix h2 {
+  border: none;
+}
+
+#prix h3 {
+  margin-top: 50px;
+  font-size: 1.3em;
+  color: #a53860;
+}
+
+#prix .categorie {
+  display: block;
+  font-size: 0.7em;
+  color: #a53860;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,40 @@
+#cv {
+	position: relative;
+	&::after {
+		content: " ";
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 100vw 80px 0;
+		border-color: transparent $colorBackgroundPale transparent transparent;
+		position: absolute;
+		bottom: -80px;
+		left: 0;
+		z-index: 10;
+	}
+	.flex {
+		display: flex;
+	}
+
+	.flex > * {
+		padding: 30px;
+	}
+
+	/* -------------------aside----------------- */
+
+	aside {
+		min-width: 300px;
+		h2 {
+			font-size: 1rem;
+			text-align: left;
+			border-bottom: 1px solid $colorTexte;
+			&::before,
+			&::after {
+				content: "";
+			}
+		}
+		ul {
+			margin-left: 20px;
+		}
+	}
+}
