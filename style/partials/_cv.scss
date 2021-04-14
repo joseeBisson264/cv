@@ -18,6 +18,12 @@
 
 	.flex > * {
 		padding: 30px;
+		&:first-child {
+			padding-left: 0px;
+		}
+		&:last-child {
+			padding-right: 0px;
+		}
 	}
 
 	/* -------------------aside----------------- */

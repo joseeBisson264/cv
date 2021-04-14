@@ -2,8 +2,7 @@
 $colorBackgroundEmphase2: #022b3a;
 $colorEmphase: #368f8b;
 $colorBackgroundPale: #fcecdd;
-$colorTexte: #333;
-*/
+$colorTexte: #333;*/
 * {
   font-family: "Roboto", sans-serif;
   color: #333;
@@ -17,10 +16,13 @@ body {
 }
 
 body > section {
-  padding: calc(5vh + 80px) 15vw 5vh 15vw;
+  padding: calc(5vh + 80px) 20vw 5vh 20vw;
 }
 
-p,
+p {
+  margin: 15px 0;
+}
+
 li {
   margin: 5px 0;
 }
@@ -115,10 +117,59 @@ header #welcomeDesc:before {
   right: 0;
   width: 300px;
   z-index: 1000;
+  opacity: 0;
+}
+
+#note p {
+  margin: 15px 0;
+  position: relative;
 }
 
 #note p:before {
   content: "- ";
+  position: absolute;
+  left: -10px;
+}
+
+#noteLogo {
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  z-index: 100000;
+  width: 35px;
+  fill: #fff;
+}
+
+#noteLogo:hover + #note {
+  opacity: 0.8;
+}
+
+.note {
+  opacity: 0.5;
+}
+
+#qualityLogo {
+  position: fixed;
+  top: 5px;
+  right: 50px;
+  z-index: 100000;
+  width: 35px;
+  fill: #fff;
+}
+
+#qualityLogo:hover + #quality {
+  opacity: 0.8;
+}
+
+#quality {
+  background-color: pink;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  z-index: 1000;
+  opacity: 0;
 }
 
 #presentation {
@@ -147,6 +198,7 @@ header #welcomeDesc:before {
 
 #presentation h2 {
   border: none;
+  margin-bottom: 2rem;
 }
 
 #presentation h2::after, #presentation h2::before {
@@ -179,6 +231,14 @@ header #welcomeDesc:before {
 
 #cv .flex > * {
   padding: 30px;
+}
+
+#cv .flex > *:first-child {
+  padding-left: 0px;
+}
+
+#cv .flex > *:last-child {
+  padding-right: 0px;
 }
 
 #cv aside {

@@ -8,10 +8,12 @@ body {
 	overflow-x: hidden;
 	background-color: $colorBackgroundPale;
 	& > section {
-		padding: calc(5vh + 80px) 15vw 5vh 15vw;
+		padding: calc(5vh + 80px) 20vw 5vh 20vw;
 	}
 }
-p,
+p {
+	margin: 15px 0;
+}
 li {
 	margin: 5px 0;
 }
