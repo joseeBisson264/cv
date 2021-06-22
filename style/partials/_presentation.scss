@@ -10,7 +10,7 @@
 		border-color: transparent $colorBackgroundEmphase2 transparent transparent;
 		position: absolute;
 		transform: scaleX(-1);
-		bottom: -80px;
+		bottom: -79px;
 		left: 0;
 		z-index: 10;
 	}
@@ -24,5 +24,32 @@
 		&::before {
 			content: " - ";
 		}
+	}
+	a {
+		//text-decoration: none;
+		//opacity: 0.6;
+		//position: relative;
+		//@at-root: uppercase;
+		font-weight: bold;
+		text-decoration-line: 2px;
+		color: $colorEmphasePale;
+
+		/*&::after {
+			content: "";
+			display: block;
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: -4px;
+			height: 1px;
+			background-color: $colorBackgroundPale;
+			transition: all 0.2s ease-out;
+		}
+		&:hover {
+			&::after {
+				bottom: -2px;
+				height: 2px;
+			}
+		}*/
 	}
 }

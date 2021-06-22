@@ -7,13 +7,17 @@
 		border: none;
 	}
 	h3 {
-		margin-top: 50px;
-		font-size: 1.3em;
+		margin-top: 3rem;
+		font-size: 1.3rem;
 		color: $colorEmphase;
+		margin-bottom: 0.5rem;
+		& + p {
+			margin-top: 0;
+		}
 	}
 	.categorie {
 		display: block;
-		font-size: 0.7em;
+		font-size: 1rem;
 		color: $colorEmphase;
 	}
 }
